@@ -140,16 +140,8 @@ EOF
     git config --global user.email "your.email@example.com"
     git config --global core.editor "vim"
     ```
-    - https://initialcommit.com/blog/Git-Cheat-Sheet-Beginner
-    - https://initialcommit.com/blog/git-cheat-sheet-intermediate   
-  - set alias for addressing cmd more convenient
-    ```sh
-    alias gs='git status'
-    alias ga='git add'
-    alias gc='git commit'
-    alias gagc='git add . && git commit'
-    alias gagcane='git add . && git commit --amend --no-edit'
-    ```
+  - https://initialcommit.com/blog/Git-Cheat-Sheet-Beginner
+  - https://initialcommit.com/blog/git-cheat-sheet-intermediate   
 - create a db with docker and visualization tool
   - install docker [https://gist.github.com/xiaopeng163/f3e72bb1990860859076985d5a723cba]
   - start db with installing docker and create test db
