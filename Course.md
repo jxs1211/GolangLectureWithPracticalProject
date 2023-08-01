@@ -73,23 +73,25 @@ EOF
 source $HOME/.bashrc
 tee -a $HOME/.bashrc <<'EOF'
 
-# Go envs
-export LANG="en_US.UTF-8" # 设置系统语言为 en_US.UTF-8，避免终端出现中文乱码
-export WORKSPACE="$HOME/workspace" # 设置工作目录
-export GOVERSION=go1.20.6 # Go 版本设置
-export GO_INSTALL_DIR=$HOME/go # Go 安装目录
-export GOROOT=$GO_INSTALL_DIR/$GOVERSION # GOROOT 设置
-export GOPATH=$WORKSPACE/golang # GOPATH 设置
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # 将 Go 语言自带的和通过 go install 安装的二进制文件加入到 PATH 路径中
-export GO111MODULE="on" # 开启 Go moudles 特性
-export GOPROXY=https://goproxy.cn,direct # 安装 Go 模块时，代理服务器设置
-export GOPRIVATE=
-export GOSUMDB=off # 关闭校验 Go 依赖包的哈希值
-EOF
-
-    root@CTU-WKS-AA578:~# mkdir workspace
-    root@CTU-WKS-AA578:~# cd workspace/
-    root@CTU-WKS-AA578:~/workspace#
+### install docker
+# To install the latest stable versions of Docker CLI, Docker Engine, and their
+# dependencies:
+#
+# 1. download the script
+#
+#   $ curl -fsSL https://get.docker.com -o install-docker.sh
+#
+# 2. verify the script's content
+#
+#   $ cat install-docker.sh
+#
+# 3. run the script with --dry-run to verify the steps it executes
+#
+#   $ sh install-docker.sh --dry-run
+#
+# 4. run the script either as root, or using sudo to perform the installation.
+#
+#   $ sudo sh install-docker.sh
 
     ```
 - Language Mechanics [ref](https://tour.ardanlabs.com/tour/variables/1)
@@ -174,7 +176,7 @@ EOF
   - https://makefiletutorial.com/
 
 #### Start coding CRUD
-- Design DB schema and generate SQL code with dbdiagram.io
+- Design DB schema and generate SQL code with [dbdiagram.io](https://dbdiagram.io/d/64d708c302bd1c4a5ea8e59b)
   - db schema with dbdiagram.io
     ```dbml
     Table "accounts" {
@@ -266,6 +268,13 @@ EOF
   - write sql with sqlc
   - generate sql with sqlc
 - How to write & run database migration in Golang
+  - install migration tool
+    https://github.com/golang-migrate/migrate/releases/download/v4.16.2/migrate.linux-amd64.tar.gz
+    tar -xzf migrate.linux-amd64.tar.gz
+    mkdir -p ~/bin
+    mv migrate.linux-amd64 ~/bin/migrate
+    rm migrate.linux-amd64.tar.gz
+
   - add sql of table creation to migration file
   - add sql of table deletion to migration file
   - compose the db migration with makefile
@@ -281,6 +290,7 @@ EOF
 
 #### Start coding REST API
 - Implement RESTful HTTP API in Go using Gin
+  export GOPROXY=https://goproxy.io,direct
 - Load config from file & environment variables in Go with Viper
 - Mock DB for testing HTTP API in Go and achieve 100% coverage
 - Implement transfer money API with a custom params validator

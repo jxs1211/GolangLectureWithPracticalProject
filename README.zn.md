@@ -3,9 +3,34 @@
 
 ## 你可从本课程获得： 
 - 如何从零构建一个高效的开发环境，更容易的学习语言的基础知识
+  ```go
+  func main() {
+    variable()
+    structs()
+    pointer()
+    constants()
+    functions()
+    arrays()
+    slices()
+    maps()
+    methods()
+    interfaces()
+    embedding()
+    exporting()
+  }
+  ```
+
 - 使用企业中开发工作流真实用到的开发工具和技术栈帮助你构建应用
+  - ![Git](https://git-scm.com/images/logos/2color-lightbg@2x.png)
+  - ![Docker](https://lh3.googleusercontent.com/bip/APOwr80jUFXwCb1f7mLFr2epoQfM3gInpjgoEP-exK66Tz3l1L_UPPg1-yrCgecQZghf5kkO23eATm40RRKtlMwsSYUEtnOsxiQOMgPKt9ofNOpYfH4-tlceNUENmLfXEbrRGwy9fKtaMxK3HhMCzWgn9_UPSKf47w=w250-h200-p)
+  - ![Compose](https://iescelia.org/ciberseguridad/wp-content/uploads/2021/02/docker-compose-logo.png)
+  - ![Go](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/512px-Go_Logo_Blue.svg.png)
+  - ![Gin](https://th.bing.com/th/id/R.3fc54a72f46b217517be25ea04cabc10?rik=CKyJyazfHPMWdg&pid=ImgRaw&r=0)
+  - ![DBeaver](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/DBeaver_logo.svg/256px-DBeaver_logo.svg.png?20210313151619)
 - 为每次课程提供Q&A环节，解决你实际动手中遇到的问题
 - 使用流行的开源工具帮助你记录开发过程中遇到的所有问题，便于溯源和巩固学习的知识
+
+  [bug-tracker](https://github.com/jxs1211/GolangLectureWithPracticalProject/issues/1)
 - 学习最差的可以获得一对一和群友的帮助，在你入门编程的道路上扶你一把。
 - 复购系列课程或老带新的可以获得讲师一对一VIP咨询，内容包括但不限于课程相关咨询，工作经验分享，个人职业发展建议，更有可能获得全球内推机会
 
@@ -42,7 +67,7 @@
 
 
 #### 正式开始写代码前，你需要知道的： 
-- 安装Git
+- 安装Git和Go
 - 如何使用github创建你自己的项目，并管理你的代码仓库
 - 使用github issues跟踪你的bug
 - 使用docker创建一个数据库和可视化工具
@@ -50,13 +75,17 @@
 
 #### 开始编码：CRUD
 - 设计数据库业务模型，使用dbdiagram生成SQL代码
+  https://dbdiagram.io/d/64d708c302bd1c4a5ea8e59b
 - 如何在Golang中编写和运行数据库迁移脚本
 - 从SQL生成Golang CRUD代码 
+- 编写单元测试
 
 #### 开始编码：REST API
 - 使用Gin实现RESTful HTTP API
 - 使用Viper管理应用的配置文件和环境变量
-- 使用Mock DB编写HTTP API的单元测试，并达到100%覆盖率
+- 通过事务实现数据库转账功能
+- 实现转账功能
+- 自定义校验
 
 ### Season 2
 

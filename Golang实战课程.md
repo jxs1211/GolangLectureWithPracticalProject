@@ -10,6 +10,7 @@
 
 ## 虽然你可能认为自己对编程一窍不通，但是你可能具备一些成为程序员的基本素质：
 
+- 把手弄脏
 - 韧性
 - 努力
 - 善于总结和回顾
@@ -23,21 +24,9 @@
 #### Basic knowledge of the language
 - Install Golang and IDE(windows WSL and mac)
 - 安装Golang和IDE
-- 语言基础
-  - Variables
-  - Struct
-  - Pointers
-  - Constants
-- 语言基础2
-  - Functions
-  - Arrays
-  - Slices
-  - Maps
-- 语言基础3 
-  - Methods
-  - Interfaces
-  - Embedding
-  - Exporting
+- 语言基础:Variables,Struct,Pointer,Constant
+- 语言基础2:Functions,Arrays,Slices,Maps
+- 语言基础3:Methods,Interfaces,Embedding,Exporting
 
 
 #### 正式开始写代码前，你需要知道的： 
@@ -51,9 +40,10 @@
 - 设计数据库业务模型，使用dbdiagram生成SQL代码
 - 如何在Golang中编写和运行数据库迁移脚本
 - 从SQL生成Golang CRUD代码 
+- 编写单元测试 
 
 #### 开始编码：REST API
 - 使用Gin实现RESTful HTTP API
 - 使用Viper管理应用的配置文件和环境变量
 - 使用Mock DB编写HTTP API的单元测试，并达到100%覆盖率
-
+- 实现转账API

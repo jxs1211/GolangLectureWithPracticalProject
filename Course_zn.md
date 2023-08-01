@@ -1,4 +1,4 @@
-## This course is mainly for people who want to learn handy coding skills for real project development
+## 本次课程是给哪些想要了解企业中真实开发工作流的人准备的
 
 ### Season 1
 
@@ -144,6 +144,23 @@ EOF
   - https://initialcommit.com/blog/git-cheat-sheet-intermediate   
 - create a db with docker and visualization tool
   - install docker [https://gist.github.com/xiaopeng163/f3e72bb1990860859076985d5a723cba]
+  ```sh
+  # install docker
+  curl -fsSL get.docker.com -o get-docker.sh
+  sh get-docker.sh
+
+  if [ ! $(getent group docker) ];
+  then 
+      sudo groupadd docker;
+  else
+      echo "docker user group already exists"
+  fi
+
+  sudo gpasswd -a $USER docker
+  sudo service docker restart
+
+  rm -rf get-docker.sh
+  ```
   - start db with installing docker and create test db
     ```sh
     docker run --name postpres -e POSTGRES_DB=simple_bank -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 postgres:12-alpine
